@@ -1,0 +1,149 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+}
+
+.container {
+	font-size: 1.75em;
+	display: flex;
+  flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.form-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 450px;
+}
+
+#main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#main-container h1 {
+	text-align: center;
+	margin-bottom: 20px;
+	margin-top: 10px;
+}
+
+.incomplete-tasks-count {
+	margin-top: 10px;
+	color: gray;
+}
+
+#add-item {}
+
+#task-list {
+	list-style-type: none;
+	margin-left: 0;
+	padding-left: 0;
+}
+
+#task-list a {
+	margin-left: 10px;
+}
+
+#task-list .form-control {
+	width: 300px;
+	display: inline-block;
+	padding: 5px;
+	font-size: 1.3rem;
+}
+
+#task-list input[type="checkbox"]  {
+	font-size: 1rem;
+}
+
+.task-label {
+	margin-left: 5px;
+}
+
+.btn {
+	padding: 10px;
+	font-size: 1rem;
+	border-radius: 4px;
+}
+
+.btn-primary {
+	background-color: green;
+	color: #FFFFFF;
+}
+
+.done {
+  text-decoration: line-through;
+}
+
+#count {
+  margin-left: 10px;
+}
+
+#new-task {
+	padding: 10px;
+	font-size: 1.6rem;
+	border-radius: 3px;
+	border: 1px gray solid;
+}
+
+.user-info {
+  border: 1px solid black;
+  display: flex;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.user-info .profile-pic img {
+  border-radius: 9999px;
+  width: 50px;
+  height: 50px;
+  background-color: gray;
+}
+
+.user-info .contact-info {
+  font-size: .75rem;
+  margin-left: 10px;
+}
+
+.contact-info p {
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+/* loading spinner css from https://loading.io/css */
+.lds-ripple {
+  display: inline-block;
+  position: relative;
+  width: 64px;
+  height: 64px;
+}
+.lds-ripple div {
+  position: absolute;
+  border: 7px solid #000;
+  opacity: 1;
+  border-radius: 50%;
+  animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+.lds-ripple div:nth-child(2) {
+  animation-delay: -0.5s;
+}
+@keyframes lds-ripple {
+  0% {
+    top: 28px;
+    left: 28px;
+    width: 0;
+    height: 0;
+    opacity: 1;
+  }
+  100% {
+    top: -1px;
+    left: -1px;
+    width: 58px;
+    height: 58px;
+    opacity: 0;
+  }
+}
